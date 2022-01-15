@@ -7,8 +7,8 @@ import { CartItem, Button } from '../components'
 import {
   clearCart,
   removeCartItem,
-  plusCartItem,
-  minusCartItem,
+  plusItem,
+  minusItem,
 } from '../redux/actions/cart'
 
 function Cart() {
@@ -32,11 +32,11 @@ function Cart() {
   }
 
   const onPlusItem = (id) => {
-    dispatch(plusCartItem(id))
+    dispatch(plusItem(id))
   }
 
   const onMinusItem = (id) => {
-    dispatch(minusCartItem(id))
+    dispatch(minusItem(id))
   }
 
   const onClickOrder = () => {
